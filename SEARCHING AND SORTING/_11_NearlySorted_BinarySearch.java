@@ -1,5 +1,5 @@
 import java.util.*;
-public class _11_UniqueElement {
+public class _11_NearlySorted_BinarySearch {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int arr[] = {10,3,40,20,50,80,70};

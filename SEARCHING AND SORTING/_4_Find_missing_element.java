@@ -1,6 +1,6 @@
 public class _4_Find_missing_element { 
     public static void main(String args[]){
-        int arr[] = {2,4,5,6};
+        int arr[] = {1,2,4,5};
         int n = arr.length;
         int ans = missing(arr, n);
         System.out.println("The missing element is "+(ans));
