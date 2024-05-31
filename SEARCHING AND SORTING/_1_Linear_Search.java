@@ -11,6 +11,7 @@ public class _1_Linear_Search {
             arr[i] = sc.nextInt();
         System.out.println("Enter the key to search : ");
         int key = sc.nextInt();
+        sc.close();
         for (int i = 0; i < n; i++) {
             if (arr[i] == key) {
                 System.out.println("Element found at index " + i);
@@ -18,6 +19,5 @@ public class _1_Linear_Search {
             }
         }
         System.out.println("Element not found");
-        sc.close();
     }
 }
