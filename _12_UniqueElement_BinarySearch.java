@@ -18,6 +18,7 @@ public class _12_UniqueElement_BinarySearch {
                 return start;
             if (mid % 2 == 0) {
                 // index is even
+                // index of answer is also even
                 if (arr[mid] == arr[mid + 1])
                     start = mid + 2;
                 else
