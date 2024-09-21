@@ -1,5 +1,4 @@
 
-
 public class _2_ReverseALinkedList {
     public static class Node {
         int data;
@@ -11,9 +10,21 @@ public class _2_ReverseALinkedList {
         }
     }
 
-    public void reverseList(){
-        
+    public static Node head;
+
+    public void reverseList() { // O(N)
+        Node curr = head;
+        Node prev = null;
+        Node next;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
     }
+
     public void printList() { // O(N)
         Node temp = head;
         while (temp != null) {
@@ -22,12 +33,12 @@ public class _2_ReverseALinkedList {
         }
         System.out.print("null\n");
     }
-    public static Node head;
-     public static void main(String[] args) {
+
+    public static void main(String[] args) {
         _2_ReverseALinkedList ll = new _2_ReverseALinkedList();
         // Create a hard-coded linked list:
         // 1 -> 2 -> 3 -> 4 -> 5
-        Node head = new Node(1);
+        head = new Node(1);
         head.next = new Node(2);
         head.next.next = new Node(3);
         head.next.next.next = new Node(4);
@@ -35,8 +46,8 @@ public class _2_ReverseALinkedList {
 
         System.out.print("Given Linked list:");
         ll.printList();
-        
-        head = ll.reverseList();
+
+        ll.reverseList();
 
         System.out.print("\nReversed Linked List:");
         ll.printList();
