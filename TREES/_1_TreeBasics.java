@@ -1,9 +1,7 @@
-package TREES;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BuildTreePreorder {
+public class _1_TreeBasics {
     public static class Node {
         int data;
         Node left;
