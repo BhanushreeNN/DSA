@@ -80,7 +80,7 @@ public class _2_Diameter {
                  \
                   8
     */
-        System.out.println("Diameter approach 1 = " + findDiameter1(tree.root));
-        System.out.println("Diameter approach 2 = " + findDiameter2(tree.root).dia);
+        System.out.println("Diameter approach 1 = " + findDiameter1(tree.root)); // 6
+        System.out.println("Diameter approach 2 = " + findDiameter2(tree.root).dia); // 6
     }
 }
