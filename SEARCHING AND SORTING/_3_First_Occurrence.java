@@ -24,7 +24,7 @@ public class _3_First_Occurrence {
             if (arr[mid] == key) {
                 ans = mid;
                 end = mid - 1;
-                // last occurrence ==> start = mid-1;
+                // last occurrence ==> start = mid+1;
             } else if (arr[mid] < key) {
                 start = mid + 1;
             } else {
