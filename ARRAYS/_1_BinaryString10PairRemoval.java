@@ -73,7 +73,7 @@ class _1_BinaryString10PairRemoval {
     //     return sb.toString();
     // }
     //-------------------------------------------------------------------------------
-    // APPROACH 2 - STRING BUILDER O(N^2)
+    // APPROACH 3 - STACK O(N)
     //-------------------------------------------------------------------------------
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
