@@ -32,7 +32,7 @@ public class _4_CycleDetectionDirected {
         graph[2].add(new Edge(2, 3));
         graph[3].add(new Edge(3, 0));
     }
-
+    // recStack ==> vertices visited in the current path
     public static boolean detectCycleDfs(ArrayList<Edge> graph[], boolean visited[], boolean recStack[], int curr) {
         visited[curr] = true;
         recStack[curr] = true;
